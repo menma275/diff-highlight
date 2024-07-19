@@ -1,6 +1,6 @@
 {
   "name": "diff-high",
-  "version": "0.1.0",
+  "version": "0.10",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -9,18 +9,25 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@types/diff": "^5.2.1",
+    "diff": "^5.2.0",
+    "next": "14.2.5",
     "react": "^18",
     "react-dom": "^18",
-    "next": "14.2.5"
+    "yarn": "^1.22.22"
   },
   "devDependencies": {
-    "typescript": "^5",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
+    "eslint": "^8",
+    "eslint-config-next": "14.2.5",
     "postcss": "^8",
     "tailwindcss": "^3.4.1",
-    "eslint": "^8",
-    "eslint-config-next": "14.2.5"
-  }
+    "typescript": "^5"
+  },
+  "description": "different highlighter",
+  "main": "index.js",
+  "author": "menma275 <ohsusie9@gmail.com>",
+  "license": "MIT"
 }
