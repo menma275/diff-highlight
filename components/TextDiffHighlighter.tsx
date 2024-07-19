@@ -50,13 +50,13 @@ const TextDiffHighlighter: React.FC = () => {
     };
 
     const renderColorLegend = () => (
-        <div className="p-1 w-fit bg-neutral-100 rounded-md border border-white">
+        <div className="p-2 w-fit bg-white rounded-md">
             <div className="flex flex-row text-sm gap-2 items-center">
                 <div className="flex items-center">
-                    <span className="w-fit px-1.5 rounded-sm text-green-800 bg-green-200 border border-green-800">Added text</span>
+                    <span className="w-fit px-1.5 rounded-sm text-green-800 bg-green-200">Added text</span>
                 </div>
                 <div className="flex items-center">
-                    <span className="w-fit px-1.5 rounded-sm text-red-800 bg-red-200 border border-red-800">Removed text</span>
+                    <span className="w-fit px-1.5 rounded-sm text-red-800 bg-red-200 ">Removed text</span>
                 </div>
             </div>
         </div>
@@ -71,7 +71,7 @@ const TextDiffHighlighter: React.FC = () => {
                         id="inputA"
                         value={inputA}
                         onChange={(e: React.ChangeEvent<HTMLTextAreaElement>) => setInputA(e.target.value)}
-                        className="mt-1 p-2 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-gray-400 focus:ring-opacity-50 focus:outline-none"
+                        className="mt-1 p-2 text-black block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-gray-400 focus:ring-opacity-50 focus:outline-none"
                         rows={5}
                     />
                 </div>
@@ -81,7 +81,7 @@ const TextDiffHighlighter: React.FC = () => {
                         id="inputB"
                         value={inputB}
                         onChange={(e: React.ChangeEvent<HTMLTextAreaElement>) => setInputB(e.target.value)}
-                        className="mt-1 p-2 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-gray-400 focus:ring-opacity-50 focus:outline-none"
+                        className="mt-1 p-2 text-black block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-gray-400 focus:ring-opacity-50 focus:outline-none"
                         rows={5}
                     />
                 </div>
